@@ -167,6 +167,7 @@ const computeSolution = (colors:string[],problemGrid:{color?:string,isConnected?
       }
 
       // console.log('Chosen color:'+chosenColor);
+      // console.log(appliedTiles);
       //update problem with modified tilesGrid and check solution
       problem = appliedTiles;
 
