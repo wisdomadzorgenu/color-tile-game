@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+      "outDir": "./build",
+      "rootDir": "./src",
+      "strict": true,
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "lib": ["es2015"],
+      "noUnusedLocals": true
+  },
+  "include": ["src/**/*.ts","app.yaml",".gcloudignore"],
+  "exclude": ["node_modules","src/test"]
+}
