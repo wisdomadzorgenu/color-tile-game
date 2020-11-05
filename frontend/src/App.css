@@ -1,0 +1,23 @@
+.App {
+   width: 40%;
+   margin: auto;
+   margin-top: 5px;
+}
+
+@media (min-width:800px) and (max-width:950px){
+   .App {
+      width: 50%;
+   }
+}
+
+@media (min-width:670px) and (max-width:800px){
+   .App {
+      width: 60%;
+   }
+}
+
+@media (max-width:675px){
+   .App {
+      width: 90%;
+   }
+}
