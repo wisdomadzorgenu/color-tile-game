@@ -42,11 +42,3 @@ $ cd projectDir
 $ cd frontend
 $ npm run test
 ```
-
-### Building for production
-For frontend production release:
-```sh
-$ cd projectDir
-$ cd frontend
-$ npm run build
-```
