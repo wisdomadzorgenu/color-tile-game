@@ -10,7 +10,7 @@ export = () =>{
    router.use(bodyParser.json());
 
    //origins to be allowed
-   const originsWhitelist = ['http://localhost:3000','https://everreal-test.web.app'];
+   const originsWhitelist = ['http://localhost:3000','https://color-tile-game.web.app'];
 
    let corsOptions = {
       origin: function(origin:any, callback:any){
