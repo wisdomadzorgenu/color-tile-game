@@ -5,7 +5,7 @@ A player makes a move by choosing one of the three colors. The goal of the game 
 
 ### Live Testing
 To test the game live, please visit
-- https://everreal-test.web.app
+- https://color-tile-game.web.app
 
 ### Installation
 This game requires [Node.js](https://nodejs.org/) v8+ to run.
@@ -13,7 +13,6 @@ This game requires [Node.js](https://nodejs.org/) v8+ to run.
 `Please install Node.js v8+ before proceeding`
 
 ###  Backend Installation and Running
-Install the dependencies and devDependencies
 ```sh
 $ cd projectDir
 $ cd backend
@@ -28,11 +27,19 @@ $ npm install
 $ npm run start
 ```
 
-## Running Test Backend Test
+## Running Backend Test
 To run already written unit tests for the services, please do the following:
 ```sh
 $ cd projectDir
 $ cd backend
+$ npm run test
+```
+
+## Running Frontend Test
+To run already written unit tests for the services, please do the following:
+```sh
+$ cd projectDir
+$ cd frontend
 $ npm run test
 ```
 
@@ -43,7 +50,3 @@ $ cd projectDir
 $ cd frontend
 $ npm run build
 ```
-
-### Upload to Hosting Server
-- Copy files in your frontend build directory to hosting server.
-- Deploy backend to production server and start
