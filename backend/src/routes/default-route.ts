@@ -11,7 +11,7 @@ export = () =>{
 
    /**
     * ========================================
-    *  GENERATE COMPUTER SOLUTION for problem
+    *  GENERATE AI SOLUTION for color game
     * ========================================
     */
    router.post('/get_solution', (req:any, res:any) => {
