@@ -1,5 +1,5 @@
 {
-  "name": "everreal-game-backend",
+  "name": "color-game-backend",
   "version": "1.0.0",
   "description": "ai game to generate sequences to solution",
   "main": "./build/server.js",
@@ -7,11 +7,12 @@
     "test": "mocha --require ts-node/register -w src/test/*.test.ts",
     "compile": "tsc && node ./build/server.js",
     "start-server": "nodemon --delay 3 --watch src --ext ts --ignore '*.test.ts' --exec \"npm run compile\" ",
-    "start":"node ./build/server.js",
-    "build": "tsc"
+    "start": "node ./build/server.js",
+    "build": "tsc",
+    "deploy":"tsc && gcloud app deploy"
   },
   "keywords": [
-    "everreal",
+    "color",
     "game",
     "ai",
     "play",
