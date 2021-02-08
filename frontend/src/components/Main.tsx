@@ -177,10 +177,10 @@ const Main: React.FC<any> = (props) => {
             <h4>This game is played by selecting the colours to fill the tiles in the main box</h4>
          </header>
          <div className="colour-section text-center">
-            <div className="color-box red" onClick={(e)=>{computeNewOrigin(colorsData[0])}}></div>
-            <div className="color-box gold" onClick={(e)=>{computeNewOrigin(colorsData[1])}}></div>
-            <div className="color-box blue" onClick={(e)=>{computeNewOrigin(colorsData[2])}}></div>
-            <div className="text-center">Choose color by clicking any of the three colours.</div>
+            <div data-testid="red-color-box" className="color-box red" onClick={(e)=>{computeNewOrigin(colorsData[0])}}></div>
+            <div data-testid="gold-color-box" className="color-box gold" onClick={(e)=>{computeNewOrigin(colorsData[1])}}></div>
+            <div data-testid="blue-color-box" className="color-box blue" onClick={(e)=>{computeNewOrigin(colorsData[2])}}></div>
+            <div className="text-center">To win the game, change the color of all tiles using the least moves.</div>
          </div>
          <div className="game-stats clearfix">
             <h4 className="float-left">Total Moves: {stateData.userMoves}</h4>
