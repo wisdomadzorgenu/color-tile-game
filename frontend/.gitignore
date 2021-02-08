@@ -25,3 +25,7 @@ yarn-error.log*
 # production
 /build
 /firebase-deploy
+
+#firebase
+.firebaserc
+firebase.json
