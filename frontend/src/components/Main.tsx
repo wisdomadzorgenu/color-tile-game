@@ -15,7 +15,7 @@ interface StateData {
 const Main: React.FC<any> = (props) => {
 
    const [isSolutionFound,updateSolution] = useState(false);
-   const [colorsData,updateColors] = useState(['red','gold','blue']);
+   const [colorsData] = useState(['red','gold','blue']);
 
    //randomize game data
    const randomizeGameData = ():{color:string,isConnected:boolean}[][] => {
@@ -56,9 +56,6 @@ const Main: React.FC<any> = (props) => {
    useEffect(()=>{
       getAISolution();
    },[]);
-
-   // useEffect(() => {
-   // },[stateData.userHistory]);
    
    const resetGame = () =>{
       let newState:StateData = {
@@ -148,7 +145,7 @@ const Main: React.FC<any> = (props) => {
 
                //if a color is connected, update curent tile to same color
                //and indicate as connected
-               if(currentTile.isConnected || connectedColor && connectedColor === currentTile.color){
+               if(currentTile.isConnected || (connectedColor && connectedColor === currentTile.color)){
                   currentTile.color = color;
                   currentTile.isConnected = true;
                }
