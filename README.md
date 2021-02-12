@@ -1,7 +1,11 @@
 # Tile Color Game
-This game is played by selecting the colours to fill the tiles in the main grid until all tiles of the board have the same color.
+This is a one player game vs an AI. 
 
-A player makes a move by choosing one of the three colors. The goal of the game is to change all the tiles to the same color, preferably with the fewest number of moves possible.
+Three set of colours are provided. After a colour is chosen, all tiles that are connected to the origin are changed to the chosen color.
+
+A player makes a move by choosing one of the three colors. `The goal of the game is to change all the tiles to the same color, preferably with the fewest number of moves possible.`
+
+AI computes its solution mathematically and you either win or lose based on your number of moves. The fewer the moves, the better.
 
 ### Live Testing
 To test the game live, please visit
@@ -10,7 +14,7 @@ To test the game live, please visit
 ### Installation
 This game requires [Node.js](https://nodejs.org/) v8+ to run.
 
-`Please install Node.js v8+ before proceeding`
+`Please install Node.js v8+ and clone project before proceeding`
 
 ###  Backend Installation and Running
 ```sh
