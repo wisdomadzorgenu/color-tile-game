@@ -1,7 +1,7 @@
 import React from 'react';
-import { render, screen,waitForElement } from '@testing-library/react';
-import userEvent from '@testing-library/user-event'
-import axiosMock from 'axios'
+import { render, screen } from '@testing-library/react';
+// import userEvent from '@testing-library/user-event'
+// import axiosMock from 'axios'
 import Main from "../components/Main"
 
 describe("Main component test suite",()=>{
